@@ -11,9 +11,9 @@ import pymysql
 
 # 在任务处理者一端加这几句
 import os
-# import django
-# os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dailyfresh.settings")
-# django.setup()
+import django
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dailyfresh.settings")
+django.setup()
 import raven
 import toml
 import sentry_sdk
