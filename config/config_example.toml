@@ -1,0 +1,46 @@
+[ database ]
+engine = ''
+user = ''
+password = ''
+host = ''
+port = 1
+database = ''
+
+[ redis ]
+host = ''
+port = 1
+password = ''
+
+[ uwebtop ]
+host = ''
+intranet_host = ''
+jwt_key = ''  # 返回给用户的 JWT 加密密钥, 每个项目建议单独生成
+
+[ harbor ]
+internal_base = ''
+external_base = ''
+  [ harbor.admin ]
+  username = ''
+  password = ''
+
+[ iam ]
+base = ''  # example: 'http://117.50.63.9:8848'
+namespace = ''  # example: 'wechat'
+password = ''  # example: '123456'
+
+[ rc_manager ]
+base = ''
+types = [
+    # type name, source name, template name
+    ['face', 'bsSnap-muaiktpi', 'continual_ga'],
+    ['image', 'bsSnap-muaiktpi', 'continual_ga'],
+]
+
+[ result ]
+base = ''
+subscriber_base = ''
+public_ftp_address = ''
+
+[ homepage ]
+base = ''
+account_creation_path = ''

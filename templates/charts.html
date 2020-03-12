@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>速农鲜生-销量指数</title>
+		<link rel="stylesheet" type="text/css" href="../static/new_css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../static/new_css/main.css">
+		<script type="text/javascript" src="../static/new_js/echarts.js"></script>
+
+	</head>
+
+	<body>
+			<div class="header_con" style="background:#BBFFFF">
+		<div class="header">
+			<div class="welcome fl">欢迎来到速农鲜生!————————学生学习训练实践作品，非商用！</div>
+			<div class="fr">
+                {% if user.is_authenticated %}
+				<div class="login_btn fl" >
+                    <a href="{% url 'goods:index' %}">返回首页</a>
+                    <span>|</span>
+					欢迎您：<em>{{ user.username }}</em>
+                    <span>|</span>
+					<a href="{% url 'user:logout' %}">退出</a>
+				</div>
+                {% else %}
+				<div class="login_btn fl">
+					<a href="{% url 'user:login' %}">登录</a>
+					<span>|</span>
+					<a href="{% url 'user:register' %}">注册</a>
+
+				</div>
+                {% endif %}
+				<div class="user_link fl">
+					<span>|</span>
+					<a href="{% url 'user:user' %}">用户中心</a>
+					<span>|</span>
+					<a href="{% url 'cart:show' %}">我的购物车</a>
+					<span>|</span>
+					<a href="{% url 'user:order' 1 %}">我的订单</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+        	<div class="search_bar clearfix">
+			<a href="index.html" class="logo fl"><img src="../static/images/logo.png"></a>
+			<div class="search_con fl">
+				<input type="text" class="input_text fl" name="" placeholder="搜索商品">
+				<input type="button" class="input_btn fr" name="" value="搜索">
+			</div>
+			<div class="guest_cart fr">
+				<a href="{% url 'cart:show' %}" class="cart_name fl">我的购物车</a>
+				<div class="goods_count fl" id="show_count"></div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="goods_detail_con clearfix" style="width: 1498px;">
+<div style="width: 33.3%;height: 100%;float:left">
+				<span style="display:inline-block;width:100%;height:32px;line-height:32px;text-align: center;color: #00bc6f;">销售统计</span>
+				<div style="height: 100%;" id="echarts-1"></div>
+			</div>
+			<div style="width: 33.3%;height: 100%;float:left">
+				<span style="display:inline-block;width:100%;height:32px;line-height:32px;text-align: center;color: #00bc6f;">库存统计</span>
+				<div style="height: 100%;" id="echarts-7"></div>
+			</div><div style="width: 33.3%;height: 100%;float:left">
+				<span style="display:inline-block;width:100%;height:32px;line-height:32px;text-align: center;color: #00bc6f;">销售趋势</span>
+					<div style="height: 100%;" id="echarts-3"></div>
+			</div>
+		</div>
+
+
+		<div class="main_wrap clearfix">
+
+		</div>
+
+            <div class="footer" style="background:#BBFFFF">
+            <div class="foot_link">
+                <a href="http://www.sdongpo.com/groupbuy">关于速农</a>
+                <span>|</span>
+                <a href="https://www.wenjuan.com/j/ni6bquK/">问题反馈</a>
+                <span>|</span>
+                <a href="https://jobs.zhaopin.com/316976514250043.htm">招贤纳士</a>
+                <span>|</span>
+                <a href="http://www.cctv.com/agriculture/20061110/104845.shtml">农业频道</a>
+            </div>
+            <p>CopyRight © 2019 学习自测，并非商用 All Rights Reserved</p>
+            <p>特别鸣谢：传智播客和所有帮助过我的朋友们，如若侵权请联系QQ：1157037674</p>
+        </div>
+		<div class="add_jump"></div>
+
+		<script type="text/javascript" src="../static/new_js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript">
+			var clientWidth = document.documentElement.scrollWidth; //获取屏幕尺寸
+			var scale = clientWidth / 1920; //缩放比例
+            $(function () {
+                refresh()
+            })
+			 setInterval(refresh,20000);
+
+            function refresh(){
+            		$.ajax({
+				url: "http://106.13.66.207:8000/user/analysi",
+				data: "",
+				type: "GET",
+				success: function(data) {
+					console.log(
+							data
+
+					)
+					var optionecharts_1 = {
+							tooltip: {
+								trigger: 'axis',
+								axisPointer: { // 坐标轴指示器，坐标轴触发有效
+									type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+								},
+							},
+							grid: {
+								left: '3%',
+								right: '4%',
+								bottom: '5%',
+								top: '3%',
+								containLabel: true
+							},
+							xAxis: [{
+								type: 'value',
+								min: 0,
+								splitLine: {
+									show: false,
+								},
+								axisLine: {
+									show: true,
+									lineStyle: {
+										color: 'rgb(173, 236, 241)'
+									}
+								},
+								axisLabel: {
+									show: true,
+									interval: 0,
+
+									textStyle: {
+										fontsize: 12 * scale,
+										// color: '#39a93e'
+										color: "#666"
+									},
+								},
+							}],
+							yAxis: [{
+								type: 'category',
+								splitLine: {
+									show: false,
+								},
+								axisLine: {
+									show: true,
+									lineStyle: {
+										color: 'rgb(173, 236, 241)'
+									}
+								},
+
+								axisLabel: {
+									show: true,
+									interval: 0,
+									//verticalAlign:'bottom',
+									textStyle: {
+										fontsize: 12 * scale,
+										color: "#666"
+									},
+
+								},
+								data: data[0],
+							}],
+							series: [{
+								name: '数据',
+								type: 'bar',
+								barWidth: 16 * scale,
+								itemStyle: {
+									normal: {
+										barBorderRadius: 4 * scale,
+										color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
+											offset: 0,
+											color: "rgb(57,169,62)"
+										}, {
+											offset: 1,
+											//color: "rgb(0,220,252)"
+											color: "rgb(123,226,131)"
+										}])
+									}
+								},
+								data: data[1]
+							}]
+						},
+						Chartecharts_1 = null;
+					var Chartecharts_1 = echarts.init(document.getElementById("echarts-1"));
+					 Chartecharts_1.clear();
+					Chartecharts_1.setOption(optionecharts_1);
+					var optionecharts_7 = {
+							tooltip: {
+								show: true //显示提示框
+							},
+							grid: {
+								left: '10%',
+								right: '10%',
+								top: '10%',
+								bottom: '10%'
+
+							},
+							graphic: {
+								type: 'text',
+								left: '23%',
+								top: 'center',
+								style: {
+									text: '水果',
+									textAlign: 'center',
+									fill: '#fff',
+									lineWidth: 0,
+									width: 40,
+									height: 40,
+									font: '1em "STHeiti"'
+								}
+							},
+							legend: {
+								show: true,
+								orient: 'vertical',
+								x: 'right',
+								y: '40%',
+								itemGap: 5,
+								itemWidth: 14,
+								itemHeight: 14,
+								align: 'left',
+								data: data[2],
+								textStyle: {
+									color: '#666',
+									fontsize: 10 * scale
+								},
+								icon: 'rect',
+								itemHeight: 7,
+								itemWidth: 7
+							},
+							series: [{
+								type: 'pie',
+								center: ['33%', '50%'],
+								color: ['#2ac6ee', '#c36dff', '#feb508', '#edfc00','#48b951'],
+								label: {
+									normal: {
+										formatter: '{d}%',
+										padding: [-5, -10, 5, -10],
+										fontSize: 12 * scale,
+										color: '#666'
+									},
+								},
+								labelLine: {
+									normal: {
+										length: 5,
+										length2: 10
+									}
+								},
+								itemStyle: {
+									normal: {
+										borderWidth: 10,
+										borderColor: 'rgba(109,251,150,0)',
+									}
+
+								},
+								data: data[3],
+							}]
+						},
+						Chartecharts_7 = null;
+					var Chartecharts_7 = echarts.init(document.getElementById("echarts-7"));
+					 Chartecharts_7.clear();
+					Chartecharts_7.setOption(optionecharts_7);
+				},
+				error: function() {
+
+				}
+			})
+                optionecharts_3 = {
+				tooltip: {
+					show: true //显示提示框
+				},
+				xAxis: [{
+					type: 'category',
+					axisLine: {
+						show: true,
+						lineStyle: {
+							color: 'rgb(173, 236, 241)'
+						}
+					},
+					axisLabel: {
+						show: true,
+						interval: 0,
+
+						textStyle: {
+							fontsize: 12 * scale,
+							// color: '#39a93e'
+							color: "#666"
+						},
+					},
+					data: ['12月15日', '12月16日', '12月17日', '12月18日', '12月19日'],
+				}],
+				yAxis: [{
+						type: 'value',
+						axisLine: {
+							show: true,
+							lineStyle: {
+								color: 'rgb(173, 236, 241)'
+							},
+
+						},
+						axisLabel: {
+							show: true,
+							interval: 0,
+
+							textStyle: {
+								fontsize: 12 * scale,
+								// color: '#39a93e'
+								color: "#666"
+							},
+						},
+					},
+
+				],
+				series: [{
+
+					data: [820, 932, 901, 934, 1290, ],
+					type: 'line',
+					itemStyle: {
+						normal: {
+							color: "rgb(57,169,62)"
+						}
+					},
+				}]
+			};
+			Chartecharts_3 = null;
+			var Chartecharts_3 = echarts.init(document.getElementById("echarts-3"));
+			Chartecharts_3.setOption(optionecharts_3);
+			window.onresize = function() {
+				Chartecharts_1.resize();
+				Chartecharts_7.resize();
+				Chartecharts_3.resize();
+
+			};
+			
+           }
+
+			var $add_x = $('#add_cart').offset().top;
+			var $add_y = $('#add_cart').offset().left;
+
+			var $to_x = $('#show_count').offset().top;
+			var $to_y = $('#show_count').offset().left;
+
+			$(".add_jump").css({
+				'left': $add_y + 80,
+				'top': $add_x + 10,
+				'display': 'block'
+			})
+			$('#add_cart').click(function() {
+				$(".add_jump").stop().animate({
+						'left': $to_y + 7,
+						'top': $to_x + 7
+					},
+					"fast",
+					function() {
+						$(".add_jump").fadeOut('fast', function() {
+							$('#show_count').html(2);
+						});
+
+					});
+			})
+		</script>
+
+	</body>
+
+</html>

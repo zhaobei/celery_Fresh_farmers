@@ -1,2 +1,2 @@
-# celery_Fresh_farmers
-Messenger of mailing
+# Fresh_farmers
+速农生鲜--

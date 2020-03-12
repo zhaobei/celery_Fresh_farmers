@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+<title>Home</title>
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" />
+<meta name="keywords" content="" />
+<script>
+	addEventListener("load", function() {
+		setTimeout(hideURLbar, 0);
+	}, false);
+
+	function hideURLbar() {
+		window.scrollTo(0, 1);
+	}
+</script>
+<!-- //Meta tag Keywords -->
+<!-- Custom-Files -->
+<link rel="stylesheet" href="static/cpts_1971_cxu/css/bootstrap.css">
+<!-- Bootstrap-Core-CSS -->
+<link rel="stylesheet" href="/home/Fresh_farmers/templates/cpts_1971_cxu/css/style.css" type="text/css" media="all" />
+<!-- Style-CSS -->
+<!-- font-awesome-icons -->
+<link href="/home/Fresh_farmers/templates/cpts_1971_cxu/css/font-awesome.css" rel="stylesheet">
+<!-- //font-awesome-icons -->
+<!-- /Fonts -->
+<link href="http://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+<!-- //Fonts -->
+
+</head>
+
+<body>
+<!-- header -->
+
+<!-- header 2 -->
+<!-- navigation -->
+<div class="main-top" id="home">
+	<header class="w3ls-top-sec">
+		<div class="container">
+
+			<div class="row">
+				<!-- logo -->
+				<h1 class="logo-w3pvt float-lg-left col-lg-3 text-center">
+					<a class="navbar-brand" href="seeyou.html">
+						<img src="/home/Fresh_farmers/templates/cpts_1971_cxu/images/logo.png" alt="" class="img-fluid logo-img">Welcome
+					</a>
+				</h1>
+				<!-- //logo -->
+				<!-- nav -->
+
+				<div class="nav_w3pvt mx-lg-auto col-lg-6 text-center">
+					<div class="row website-mini-w3pvt">
+						<p class="top-para text-lg-left text-center col-lg-6">恭喜你来到了彩蛋世界</p>
+						<ul class="top-right-info col-lg-6">
+							<li>
+								<p class="par-so mr-3">Follow As:</p>
+							</li>
+							<li class="mr-1 soci-effe facebook">
+								<a href="#">
+									<span class="fa fa-facebook-f"></span>
+								</a>
+							</li>
+							<li class="mr-1 soci-effe twitter">
+								<a href="#">
+									<span class="fa fa-twitter"></span>
+								</a>
+							</li>
+							<li class="mr-1 soci-effe google-plus">
+								<a href="#">
+									<span class="fa fa-google-plus"></span>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+					<nav>
+						<label for="drop" class="toggle">Menu</label>
+						<input type="checkbox" id="drop">
+						<ul class="menu mx-lg-auto align-items-center">
+							<li class="active"><a href="seeyou.html" class="active">Home</a></li>
+							<li><a href="#about">About Us</a></li>
+							<li>
+								<!-- First Tier Drop Down -->
+								<label for="drop-2" class="toggle toogle-2">Pages <span class="fa fa-angle-down" aria-hidden="true"></span>
+								</label>
+								<a href="#">Pages <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+								<input type="checkbox" id="drop-2">
+								<ul>
+									<li><a href="#services" class="drop-text">Services</a></li>
+									<li><a href="#process" class="drop-text">Proces</a></li>
+									<li><a href="#blog" class="drop-text">Blog</a></li>
+									<li><a href="#test" class="drop-text">Testimonials</a></li>
+								</ul>
+							</li>
+							<li><a href="#gallery">Gallery</a></li>
+							<li><a href="#contact">Contact Us</a></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- //nav -->
+				<!-- dwn -->
+				<div class="free-w3pvt search-w3pvt-form col-lg-3">
+					<form action="#" method="post" class="search-inn">
+						<input class="search" type="search" placeholder="Search here..." required="">
+						<button class="form-control btn" value=""><span class="fa fa-search"></span></button>
+
+					</form>
+					<!-- //dwn -->
+				</div>
+			</div>
+		</div>
+	</header>
+</div>
+<!-- //navigation -->
+<!-- //header 2 -->
+
+<!-- banner -->
+
+<div class="banner_main">
+	<div class="overlay-w3pvt">
+		<div class="container">
+			<div class="banner-info text-center">
+				<h5>The requested resource was not found on this server</h5>
+				<h3>404 Not Found
+					<br>in the State </h3>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //banner -->
+
+<!-- banner bottom grids -->
+<div class="about-bottom">
+	<div class="container pb-lg-4">
+		<div class="feature-grids row mt-lg-5 mt-4 px-sm-0 px-3">
+			<div class="col-4 gd-bottom p-0">
+				<img src="http://106.13.66.207:8000/static/cpts_1971_cxu/images/g2.jpg" alt="" class="img-fluid image1">
+			</div>
+			<div class="col-4 gd-bottom b-2-in p-0">
+				<img src="/home/Fresh_farmers/templates/cpts_1971_cxu/images/g1.jpg" alt="" class="img-fluid image1">
+			</div>
+			<div class="col-4 gd-bottom p-0">
+				<img src="/home/Fresh_farmers/templates/cpts_1971_cxu/images/b3.jpg" alt="" class="img-fluid image1">
+			</div>
+
+		</div>
+
+	</div>
+</div>
+<!-- //banner bottom grids -->
+<!-- banner bottom grids -->
+<section class="content-info py-5" id="about">
+	<div class="container py-md-5">
+		<div class="info-w3pvt-mid text-center px-lg-5">
+
+			<div class="title-desc text-center px-lg-5">
+				<h3 class="title-w3ls mb-4 text-center">随着项目的结束，该和母校说再见了</h3>
+				<p class="px-lg-5">从此，不会再因为毕业设计而烦恼，迎来的确是另一个挑战，记得导师曾说过，人生就是不断克服一个又一个的困难，并从中学到有用的知识，是啊，再回首已是毕业时，希望这个项目能够成为我不断进取挑战的里程碑！</p>
+				<a class="btn mt-lg-4 mt-3 read scroll" href="#services" role="button">Learn More</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //banner bottom grids -->
+<!-- banner bottom grids -->
+<section class="content-info" id="his">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 cont-inf-w3ls bg-yellow p-5">
+				<div class="inner-cont-inf-w3ls p-lg-5 p-3">
+					<h4> <span class="year">2020</span> 愿你们的人生从此扬帆起航，不负时光不负自己。</h4>
+					<p>时间如白驹过隙，再次翻开日历，距2016年9月已过去四年，四年的学习生涯接近尾声，四年的校园生活让我难忘，四年的同窗友谊让我难以忘怀。</p>
+					<p>此时天空虽然阴沉，但心中的光足以照亮一切。一纸通知，承载了4年来的艰苦付出</p>
+				</div>
+			</div>
+			<div class="col-lg-6 cont-img-w3ls p-lg-0">
+
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //banner bottom grids -->
+<!--/works -->
+<section class="work py-5" id="process">
+	<div class="container py-md-5">
+		<!--/start-work-grids-->
+
+		<!-- //End-work-grids-->
+	</div>
+</section>
+<!-- //works-->
+
+<!-- banner bottom grids -->
+<section class="testimonials" id="services">
+	<div class="overlay-w3pvt-test py-5">
+		<div class="container py-md-3">
+			<div class="info-w3pvt-mid text-left">
+				<div class="feature-grids serve-gds row">
+					<div class="col-lg-4 gd-bottom mt-4">
+
+					</div>
+
+					<div class="col-lg-4 gd-bottom mt-4">
+
+					</div>
+					<div class="col-lg-4 gd-bottom mt-4">
+						<div class="serve-gd-w3pvt">
+							<span class="fa fa-pied-piper-alt" aria-hidden="true"></span>
+							<h3 class="my-3">双手敲出的行行代码之中
+是斑斓画布上的点睛之笔
+亦是一次次实验的成功所在</h3>
+
+						</div>
+					</div>
+
+				</div>
+				<div class="feature-grids serve-gds row mt-2">
+					<div class="col-lg-4 gd-bottom mt-4">
+						<div class="serve-gd-w3pvt">
+							<span class="fa fa-child" aria-hidden="true"></span>
+							<h3 class="my-3">时光从不辜负努力的人
+如今的我们
+妙笔生花 能言善辩
+抬眼
+夜空的那一抹星辰
+熠熠生辉</h3>
+
+						</div>
+					</div>
+
+					<div class="col-lg-4 gd-bottom mt-4">
+
+					</div>
+					<div class="col-lg-4 gd-bottom mt-4">
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //banner bottom grids -->
+<!--/works -->
+<section class="work py-5">
+
+</section>
+<!-- //works-->
+<!-- /stats-->
+
+<!-- //stats-->
+<!-- Gallery -->
+
+<!-- //gallery -->
+
+<!-- /blog -->
+<section class="blog-content py-5" id="blog">
+	<div class="container py-md-5">
+		<h3 class="title-w3ls mb-5 text-center">
+			一万次悲伤</h3>
+		<div class="feature-grids row ">
+			<div class="col-lg-4 blog-w3pvt-grid gd-bottom mt-4">
+				<div class="bottom-gd p-lg-5 p-4">
+					<img src="/home/Fresh_farmers/templates/cpts_1971_cxu/images/blog1.jpg" alt="" class="img-fluid image1">
+					<h3 class="my-3">Blog Post1</h3>
+					<p>Oh honey
+我脑海里全都是你
+Oh 无法抗拒的心悸
+难以呼吸
+Tonight
+是否又要错过一个夜晚
+是否还要掩饰最后的期待
+Oh tonight
+一万次悲伤
+依然会有dream
+我一直在最温暖的地方等你
+似乎只能这样 仅有一个方向
+已不能改变
+每一颗眼泪是一万道光
+最昏暗的地方也变得明亮
+我奔涌的暖流 寻找你的海洋
+我注定这样
+Oh honey </p>
+
+				</div>
+			</div>
+			<div class="col-lg-4 blog-w3pvt-grid gd-bottom mt-4">
+				<div class="bottom-gd2-active p-lg-5 p-4">
+					<img src="/home/Fresh_farmers/templates/cpts_1971_cxu/images/blog2.jpg" alt="" class="img-fluid image1">
+					<h3 class="my-3"></h3>
+					<p>你目光里充满忧郁
+就像经历一片废墟 难以逃避
+Tonight
+是否还要错过这个夜晚
+是否还要熄灭所有的期待
+Oh tonight
+一万次悲伤
+依然会有dream
+我一直在最后的地方等你
+似乎只能这样
+仅有一个方向
+已不能改变
+每一颗眼泪是一万道光
+最昏暗的地方也变得明亮
+我奔涌的暖流 寻找你的海洋
+我注定这样
+一万次悲伤
+依然会有dream
+我一直在最后的地方等你
+似乎只能这样
+仅有一个方向
+已不能改变
+每一颗眼泪是一万道光
+</p>
+
+				</div>
+			</div>
+			<div class="col-lg-4 blog-w3pvt-grid gd-bottom mt-4">
+				<div class="bottom-gd p-lg-5 p-4">
+					<img src="/home/Fresh_farmers/templates/cpts_1971_cxu/images/blog3.jpg" alt="" class="img-fluid image1">
+					<h3 class="my-3">Blog Post3</h3>
+					<p>最昏暗的地方也变得明亮
+我奔涌的暖流 寻找你的海洋
+我注定这样
+Oh honey
+我脑海里全都是你
+Oh 无法抗拒的心悸一万次悲伤
+依然会有dream
+我一直在最温暖的地方等你
+似乎只能这样 仅有一个方向
+已不能改变
+每一颗眼泪是一万道光
+最昏暗的地方也变得明亮
+我奔涌的暖流 寻找你的海洋
+我注定这样</p>
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</section>
+<!-- //blog -->
+<!--/testimonialals-->
+
+<!--//testimonialals-->
+<!--/banner-bottom -->
+
+<!-- //banner-bottom -->
+
+<!-- footer -->
+
+<footer class="footer-content text-center py-5">
+	<div class="container py-md-3">
+		<!-- logo -->
+		<h2 class="logo2 text-center">
+			<a href="seeyou.html">
+				愿你的人生永远没有404
+			</a>
+		</h2>
+		<!-- //logo -->
+		<!-- address -->
+		<div class="contact-left-footer mt-md-4">
+			<ul>
+				<li>
+					<p>
+						<span class="fa fa-map-marker mr-2"></span>哈尔滨信息工程学院
+					</p>
+				</li>
+				<li class="mx-4">
+					<p>
+						<span class="fa fa-phone mr-2"></span>----------
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class="fa fa-envelope-open mr-2"></span>
+						<a href="mailto:info@example.com">---------</a>
+					</p>
+				</li>
+			</ul>
+		</div>
+		<!-- //address -->
+		<!-- social icons -->
+		<div class="footer-w3layouts-copy-social my-4">
+			<ul>
+				<li>
+					<a href="#">
+						<span class="fa fa-facebook-square"></span>
+					</a>
+				</li>
+				<li class="mx-2">
+					<a href="#">
+						<span class="fa fa-twitter-square"></span>
+					</a>
+				</li>
+				<li class="">
+					<a href="#">
+						<span class="fa fa-google-plus-square"></span>
+					</a>
+				</li>
+				<li class="mx-2">
+					<a href="#">
+						<span class="fa fa-linkedin-square"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="fa fa-rss-square"></span>
+					</a>
+				</li>
+				<li class="ml-2">
+					<a href="#">
+						<span class="fa fa-pinterest-square"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- //social icons -->
+		<!-- copyright -->
+		<div class="w3pvt-copy text-center">
+
+
+		</div>
+		<!-- //copyright -->
+		<!-- move top icon -->
+		<div class="move-top text-center mt-3">
+			<a href="#home" class="move-top"><span class="fa fa-angle-double-up" aria-hidden="true"></span></a>
+		</div>
+		<!-- //move top icon -->
+	</div>
+
+</footer>
+<!-- //footer -->
+
+
+
+
+
+<embed src="/home/Fresh_farmers/templates/cpts_1971_cxu/music/xun.mp3"  loop="true" width="0" height="0" autostart="-1" />
+ <audio controls="controls">
+	<source src="/home/Fresh_farmers/templates/cpts_1971_cxu/music/xun.mp3" type="audio/mpeg">
+	<embed src="/home/Fresh_farmers/templates/cpts_1971_cxu/music/xun.mp3" width="0" height="0" autostart="false" loop="false">
+
+</body>
+
+</html>

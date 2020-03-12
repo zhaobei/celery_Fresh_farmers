@@ -1,0 +1,31 @@
+[ database ]
+engine = 'django.db.backends.mysql'
+user = 'root'
+password = 'mysql'
+host = '106.12.205.159'
+port = 3306
+database = 'dailyfresh'
+
+[ redis ]
+host = '106.12.205.159'
+port = 6379
+
+[ Email ]
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.163.com'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = '18846762805@163.com'
+EMAIL_HOST_PASSWORD = 'zX19980820'
+EMAIL_FROM = '基于python在线农产品直销平台——速农鲜生<18846762805@163.com>'
+
+
+[ case ]
+BACKEND="django_redis.cache.RedisCache"
+LOCATION="redis://106.12.205.159:6379/9"
+CLIENT_CLASS="django_redis.client.DefaultClient"
+
+
+[ fdfs ]
+FDFS_CLIENT_CONF='./utils/fdfs/client.conf'
+FDFS_URL='http://106.13.66.207:8888/'
+

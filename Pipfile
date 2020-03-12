@@ -1,0 +1,30 @@
+[[source]]
+name = "pypi"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+verify_ssl = true
+
+[dev-packages]
+flake8 = "*"
+
+[packages]
+django = "==2.1"
+pyjwt = "*"
+mysqlclient = "*"
+gunicorn = "*"
+pycrypto = "*"
+raven = "*"
+schema = "*"
+pydes = "*"
+django-ratelimit = "*"
+requests = "*"
+xlsxwriter = "*"
+openpyxl = "*"
+redis = "*"
+ipython = "==7.4.0"
+pyutils = {ref = "develop",git = "https://github.com/jtr109/pyutils.git",editable = true}
+toml = "*"
+django-nose = "*"
+coverage = "*"
+
+[requires]
+python_version = "3.7"
