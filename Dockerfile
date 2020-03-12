@@ -10,6 +10,6 @@ COPY pl.txt .
 COPY . .
 RUN pip install --upgrade pip
 RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r pl.txt
-CMD python manage.py runserver 0.0.0.0:8000
+CMD celery -A celery_tasks.tasks worker -l info
 
 
